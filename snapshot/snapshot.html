@@ -25,118 +25,120 @@
     <h1>Chief Bud - Veteran Housing Navigator</h1>
 
     <h2 class="mission">👋 Thanks for checking out Chief Bud.</h2>
-    <p class="blurb">We're not collecting your data — we're collecting your input. This isn't a finished product yet.</p> <p class="blurb">We're building the Custom Snapshot feature now, and your answers will help make sure it actually works for veterans like you and myself.</p><p class="blurb">A working prototype will be ready soon — and if you’re interested, you can be one of the first to try it.</p>
-
-    <div class="form-container">
-      <div class="card" id="form-card">
-        <div class="card-header">
-          <h1 class="card-title">Custom Snapshot</h1>
-          <p class="card-description">Help us understand your needs to so that we can make the right thing.</p>
-          <div class="progress-steps">
-            <div class="step-indicator active" data-step="1">1</div>
-            <div class="step-indicator" data-step="2">2</div>
-            <div class="step-indicator" data-step="3">3</div>
-          </div>
-        </div>
-        
-        <form id="snapshot-form" method="POST" action="https://formspree.io/f/xjkwjewd">
-          <div class="card-content">
-            <div id="error-message" class="error-message"></div>
-            
-            <!-- Step 1 -->
-            <div class="step-content active" data-step="1">
-              <div class="form-group">
-                <h3 class="form-title">What kind of VA housing resources are you looking for now or in the near future?</h3>
-                <p class="form-subtitle">Check all that apply</p>
-                
-                <div class="checkbox-group">
-                  <div class="checkbox-item">
-                    <input type="checkbox" id="emergency" name="housing_option_emergency">
-                    <label class="checkbox-label" for="emergency">Emergency or transitional housing</label>
-                  </div>
-                  
-                  <div class="checkbox-item">
-                    <input type="checkbox" id="rent" name="housing_option_rent">
-                    <label class="checkbox-label" for="rent">Rent help / vouchers</label>
-                  </div>
-                  
-                  <div class="checkbox-item">
-                    <input type="checkbox" id="va-loan" name="housing_option_va-loan">
-                    <label class="checkbox-label" for="va-loan">Buying a home with a VA loan</label>
-                  </div>
-                  
-                  <div class="checkbox-item">
-                    <input type="checkbox" id="building" name="housing_option_building">
-                    <label class="checkbox-label" for="building">Building a home</label>
-                  </div>
-                  
-                  <div class="checkbox-item">
-                    <input type="checkbox" id="other" name="housing_option_other">
-                    <label class="checkbox-label" for="other">Something else</label>
-                  </div>
-                </div>
-                
-                <div id="other-input" class="other-input">
-                  <label class="form-label" for="other-text">Please describe what kind of housing help you're looking for</label>
-                  <input type="text" id="other-text" name="other_housing_text" placeholder="Describe your housing needs...">
-                  <p class="form-hint">Your specific needs will help us build a better experience.</p>
-                </div>
-              </div>
-              
-
-            
-            <!-- Step 2 -->
-            <div class="step-content" data-step="2">
-              <div class="form-group">
-                <h3 class="form-title">What would you want your Custom Snapshot to show you?</h3>
-                <p class="form-subtitle">Example: "What benefits I qualify for," "How to apply," "Step-by-step process," etc.</p>
-                <textarea id="snapshot-preference" name="snapshot_preference" placeholder="Tell us what you'd like to see..."></textarea>
+    <p class="blurb">We're not collecting your data — we're collecting your input. This isn't a finished product yet.</p> <p class="blurb">We're building the Custom Snapshot feature now, and your answers will help make sure it actually works for veterans and their families.</p>
+    <p class="blurb">A working prototype will be ready soon — and if you'e interested, you can be one of the first to try it.</p>
+    
+        <!-- Snapshot Form Start -->
+        <div class="snapshot-form-container">
+          <div class="card" id="form-card">
+            <div class="card-header">
+              <h2 class="card-title">Custom Snapshot</h2>
+              <p class="card-description">Help us understand your needs to create a personalized snapshot.</p>
+              <div class="progress-steps">
+                <div class="step-indicator active" data-step="1">1</div>
+                <div class="step-indicator" data-step="2">2</div>
+                <div class="step-indicator" data-step="3">3</div>
               </div>
             </div>
             
-            <!-- Step 3 -->
-            <div class="step-content" data-step="3">
-              <div class="form-group">
-                <h3 class="form-title">Want to see the prototype when it's ready?</h3>
-                <p class="form-subtitle">We'll email you early access — no spam, ever.</p>
-                <input type="email" id="prototype-email" name="prototype_email" placeholder="Your email address">
+            <form id="snapshot-form" method="POST" action="https://formspree.io/f/xjkwjewd">
+              <div class="card-content">
+                <div id="error-message" class="error-message"></div>
+                
+                <!-- Step 1 -->
+                <div class="step-content active" data-step="1">
+                  <div class="form-group">
+                    <h3 class="form-title">What kind of VA housing resources would you now or in the future be looking for?</h3>
+                    <p class="form-subtitle">Check all that apply</p>
+                    
+                    <div class="checkbox-group">
+                      <div class="checkbox-item">
+                        <input type="checkbox" id="emergency" name="housing_option_emergency">
+                        <label class="checkbox-label" for="emergency">Emergency or transitional housing</label>
+                      </div>
+                      
+                      <div class="checkbox-item">
+                        <input type="checkbox" id="rent" name="housing_option_rent">
+                        <label class="checkbox-label" for="rent">Rent help / vouchers</label>
+                      </div>
+                      
+                      <div class="checkbox-item">
+                        <input type="checkbox" id="va-loan" name="housing_option_va-loan">
+                        <label class="checkbox-label" for="va-loan">Buying a home with a VA loan</label>
+                      </div>
+                      
+                      <div class="checkbox-item">
+                        <input type="checkbox" id="building" name="housing_option_building">
+                        <label class="checkbox-label" for="building">Building a home</label>
+                      </div>
+                      
+                      <div class="checkbox-item">
+                        <input type="checkbox" id="other" name="housing_option_other">
+                        <label class="checkbox-label" for="other">Something else</label>
+                      </div>
+                    </div>
+                    
+                    <div id="other-input" class="other-input">
+                      <label class="form-label" for="other-text">Please describe what kind of VA housing resources that you would be interested in.</label>
+                      <input type="text" id="other-text" name="other_housing_text" placeholder="Describe your housing needs...">
+                      <p class="form-hint">Your specific needs help us provide better assistance</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="step-content" data-step="2">
+                  <div class="form-group">
+                    <h3 class="form-title">What would you want your Custom Snapshot to show you?</h3>
+                    <p class="form-subtitle">Example: "What benefits I qualify for," "How to apply," "Step-by-step process," etc.</p>
+                    <textarea id="snapshot-preference" name="snapshot_preference" placeholder="Tell us what you'd like to see..."></textarea>
+                  </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="step-content" data-step="3">
+                  <div class="form-group">
+                    <h3 class="form-title">Want to see the prototype when it's ready?</h3>
+                    <p class="form-subtitle">We'll email you early access — no spam, ever.</p>
+                    <input type="email" id="prototype-email" name="prototype_email" placeholder="Your email address">
+                  </div>
+                  
+                  <!-- Hidden fields to ensure all data is submitted -->
+                  <input type="hidden" name="housing_options" id="housing-options-hidden">
+                </div>
               </div>
               
-              <!-- Hidden fields to ensure all data is submitted -->
-              <input type="hidden" name="housing_options" id="housing-options-hidden">
-            </div>
+              <div class="card-footer">
+                <button type="button" id="prev-button" class="button button-outline" style="visibility: hidden;">
+                  <span class="button-icon">←</span> Back
+                </button>
+                
+                <button type="button" id="next-button" class="button button-primary">
+                  Next <span class="button-icon">→</span>
+                </button>
+                
+                <button type="submit" id="submit-button" class="button button-primary" style="display: none;">
+                  Submit
+                </button>
+              </div>
+            </form>
           </div>
           
-          <div class="card-footer">
-            <button type="button" id="prev-button" class="button button-outline" style="visibility: hidden;">
-              <span class="button-icon">←</span> Back
-            </button>
+          <!-- Success Card (initially hidden) -->
+          <div class="card" id="success-card" style="display: none;">
+            <div class="card-header">
+              <h2 class="card-title" style="text-align: center;">Thank You!</h2>
+              <p class="card-description" style="text-align: center;">Your response has been submitted successfully.</p>
+            </div>
             
-            <button type="button" id="next-button" class="button button-primary">
-              Next <span class="button-icon">→</span>
-            </button>
-            
-            <button type="submit" id="submit-button" class="button button-primary" style="display: none;">
-              Submit
-            </button>
+            <div class="success-container">
+              <div class="success-icon">✓</div>
+              <p id="success-message" class="form-subtitle" style="text-align: center;"></p>
+            </div>
           </div>
-        </form>
-      </div>
-      
-      <!-- Success Card (initially hidden) -->
-      <div class="card" id="success-card" style="display: none;">
-        <div class="card-header">
-          <h1 class="card-title" style="text-align: center;">Thank You!</h1>
-          <p class="card-description" style="text-align: center;">Your response has been submitted successfully.</p>
         </div>
-        
-        <div class="success-container">
-          <div class="success-icon">✓</div>
-          <p id="success-message" class="form-subtitle" style="text-align: center;"></p>
-        </div>
-      </div>
-    </div>
-    
+        <!-- Snapshot Form End -->
+
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         // Elements
@@ -275,9 +277,7 @@
         }
       });
     </script>
-   
-      </div>
-    </div>
+
   </div>
 </body>
 </html>
